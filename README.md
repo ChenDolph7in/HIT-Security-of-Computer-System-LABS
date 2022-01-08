@@ -2,4 +2,4 @@
 课程代码：CS33311
 *****
 # HIT-Security-of-Computer-System-LABS-in-21-Autumn
-Course Code：CS33311
+Course code：CS33311
