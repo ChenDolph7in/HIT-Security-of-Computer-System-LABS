@@ -1,0 +1,24 @@
+
+2021/12/15 08:31:14:(client)user1 login success
+2021/12/15 08:31:39:(administer)admin login success
+2021/12/15 08:31:57:(administer)user2 finished bill id = 10, username = user2, change_money = -200
+2021/12/15 08:31:59:(administer)user2 finished bill id = 11, username = user2, change_money = 200
+2021/12/15 08:32:01:(administer)user2 finished bill id = 12, username = user2, change_money = 200
+2021/12/15 08:34:29:(client)user1 login success
+2021/12/15 08:34:55:(general)general login success
+2021/12/15 09:30:22:(client)user1 login success
+2021/12/15 09:30:36:(client)user1 create bill, deposit money = 100
+2021/12/15 09:31:00:(administer)admin login success
+2021/12/15 09:31:07:(administer)user1 update user1 's currency:100
+2021/12/15 09:31:07:(administer)user1 finished bill id = 13, username = user1, change_money = 100
+2021/12/15 10:11:44:(client)user1 login success
+2021/12/15 10:13:25:(administer)admin login success
+2021/12/15 10:14:46:(general)general login success
+2021/12/15 10:16:21:(client)user1 login success
+2021/12/15 10:16:32:(client)user1 create bill, deposit money = 200
+2021/12/15 10:16:36:(client)user1 create bill, withdraw money = 100
+2021/12/15 10:17:01:(administer)admin login success
+2021/12/15 10:17:08:(administer)user1 update user1 's currency:300
+2021/12/15 10:17:08:(administer)user1 finished bill id = 14, username = user1, change_money = 200
+2021/12/15 10:17:24:(administer)user1 finished bill id = 15, username = user1, change_money = -100
+2021/12/15 17:10:12:(audit)audit login success

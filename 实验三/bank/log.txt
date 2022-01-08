@@ -1,0 +1,17 @@
+2021/12/08 08:28:25 client : user1 login success
+2021/12/08 08:28:36:user1 create bill change_money = 500
+2021/12/08 08:28:41:user1 create bill change_money = -200
+2021/12/08 08:28:59 administer : admin login success
+2021/12/08 08:29:09:user1 update user1 's currency:500
+2021/12/08 08:29:09:user1 delete bill id = 1, username = user1, change_money = 500
+2021/12/08 08:29:11:user1 update user1 's currency:300
+2021/12/08 08:29:11:user1 delete bill id = 2, username = user1, change_money = -200
+2021/12/08 11:19:53 client : user1 login success
+2021/12/08 11:23:05 administer : admin login success
+2021/12/08 22:29:33 client : user1 login success
+2021/12/08 22:31:54:user1 create bill change_money = 500
+2021/12/08 22:32:03:user1 create bill change_money = -300
+2021/12/08 22:33:23 administer : admin login success
+2021/12/08 22:34:28:user1 update user1 's currency:800
+2021/12/08 22:34:28:user1 delete bill id = 3, username = user1, change_money = 500
+2021/12/08 22:34:29:user1 delete bill id = 4, username = user1, change_money = -300

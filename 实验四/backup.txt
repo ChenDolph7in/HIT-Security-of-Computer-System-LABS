@@ -1,0 +1,38 @@
+DROP PROCEDURE IF EXISTS promote_client;
+DELIMITER $$
+CREATE PROCEDURE promote_client(IN p_username varchar(255))
+BEGIN
+    DECLARE p_id int;
+    SELECT id INTO p_id FROM lab4.users WHERE username=p_username;
+    DELETE FROM lab4.client_info WHERE id=p_id;
+    INSERT INTO lab4.admin_info(username) VALUES(p_username);
+    
+END$$
+DELIMITER ;
+
+DROP PROCEDURE IF EXISTS promote_admin;
+DELIMITER $$
+CREATE PROCEDURE promote_admin(IN p_username varchar(255))
+BEGIN
+    DECLARE p_id int;
+    SELECT id INTO p_id FROM lab4.users WHERE username=p_username;
+    DELETE FROM lab4.admin_info WHERE id=p_id;
+    INSERT INTO lab4.boss_info(username) VALUES(p_username);
+END$$
+DELIMITER ;
+
+DROP PROCEDURE IF EXISTS demote_admin;
+DELIMITER $$
+CREATE PROCEDURE demote_admin(IN p_username varchar(255))
+BEGIN
+    DECLARE p_id int;
+    SELECT id INTO p_id FROM lab4.users WHERE username=p_username;
+    DELETE FROM lab4.admin_info WHERE id=p_id;
+    INSERT INTO lab4.client_info(username,currency) VALUES(p_username,0);
+END$$
+DELIMITER ;
+
+GRANT EXECUTE ON PROCEDURE lab4.promote_client TO 'boss'@'localhost';
+GRANT EXECUTE ON PROCEDURE lab4.promote_admin TO 'boss'@'localhost';
+GRANT EXECUTE ON PROCEDURE lab4.demote_admin TO 'boss'@'localhost';
+GRANT EXECUTE ON PROCEDURE lab4.promote_client TO 'admin'@'localhost';

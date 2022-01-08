@@ -1,0 +1,2 @@
+service pure-ftpd stop
+pure-ftpd -j -lpuredb:/etc/pure-ftpd/pureftpd.pdb
